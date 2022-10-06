@@ -3,6 +3,7 @@ import { useAppContext } from "../../context/template";
 import { Menu } from "../../components/menu";
 import { HouseDetails } from "../../components/house/house"
 import { houeDetails } from "../../interfaces/userInterfaces"
+
 import { useEffect, useState } from "react";
 
 export interface houseDtls {
@@ -38,18 +39,39 @@ function House() {
     //     }
     // }
       const houses: houeDetails[] =   [{
-                houseName: "AA",
-                houseID: 12,
+                houseName: "A",
+                houseID: 1,
                 rentAmt: 9000,
                 alloted: true,
-                occupied: "AAAAAA",
+                occupied: "Ganesan",
             },
             {
-                houseName: "BB",
-                houseID: 14,
+                houseName: "B",
+                houseID: 2,
                 rentAmt: 9000,
                 alloted: false,
                 occupied: "",
+            },
+            {
+                houseName: "C",
+                houseID: 3,
+                rentAmt: 10000,
+                alloted: false,
+                occupied: "",
+            },
+            {
+                houseName: "D",
+                houseID: 4,
+                rentAmt: 10000,
+                alloted: true,
+                occupied: "Sakthy",
+            },
+            {
+                houseName: "E",
+                houseID: 5,
+                rentAmt: 8500,
+                alloted: true,
+                occupied: "BABU",
             },
 
             ]
@@ -63,9 +85,7 @@ function House() {
         <div>
             <Menu/>
             <HouseDetails  house = {houses} />
-            {appContext.email}
-            {appContext.name}
-            
+                    
 ​
          
         </div>

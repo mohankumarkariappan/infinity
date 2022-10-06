@@ -40,7 +40,7 @@ export const Menu = () => {
 // optional options with default values and callback functions
 
   return (
-
+<>
     <div>
       <nav className="p-3 bg-gray-50 rounded border-gray-200 dark:bg-gray-800 dark:border-gray-700">
         <div className="container flex flex-wrap justify-between items-center mx-auto">
@@ -59,7 +59,7 @@ export const Menu = () => {
           <div className="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
       <ul className="flex flex-col mt-4 bg-gray-50 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
         <li>
-          <a href="#" className="block py-2 pr-4 pl-3 text-white
+          <a href="/" className="block py-2 pr-4 pl-3 text-white
            bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0
             md:dark:text-white
              dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
@@ -76,7 +76,7 @@ export const Menu = () => {
            hover:bg-gray-100 md:hover:bg-transparent md:border-0
             md:hover:text-blue-700 md:p-0 dark:text-gray-400
             md:dark:hover:text-white dark:hover:bg-gray-700
-             ark:hover:text-white md:dark:hover:bg-transparent">Test 2</a>
+             ark:hover:text-white md:dark:hover:bg-transparent">Bills</a>
         </li>
         <li>
           <a href="/contacts" className="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
@@ -87,8 +87,30 @@ export const Menu = () => {
         </div>
 
       </nav>
+      <div>
+      <footer className="fixed bottom-0 left-0 z-20 p-4 w-full bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+    <span className="text-sm text-gray-500 md:text-center dark:text-gray-400">© 2022 
+    <a href="" className="hover:underline">Infinity</a>. All Rights Reserved.
+    </span>
+    <ul className="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+        {/* <li>
+            <a href="#" className="mr-4 hover:underline md:mr-6 ">About</a>
+        </li>
+        <li>
+            <a href="#" className="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+        </li>
+        <li>
+            <a href="#" className="mr-4 hover:underline md:mr-6">Licensing</a>
+        </li>
+        <li>
+            <a href="#" className="hover:underline">Contact</a>
+        </li> */}
+    </ul>
+</footer>
+      </div>
 
       </div>
+      </>
   )
 }
 export default Menu
