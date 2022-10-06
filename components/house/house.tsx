@@ -13,8 +13,9 @@ export const HouseDetails = ({ house }: {house: houeDetails[]} )=> {
     return (
         <>
         <div className="w-full p-5 dark:text-gray-400  text-gray-500  bg-slate-10 ">
-            <div className="h-1 font-bold" >
-           <h1> House Details </h1>
+        <div className="font-bold">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> 
+               House Details</h5>
             </div>
     
         <table className=" p-10 mt-10 w-full text-sm text-left text-gray-500 dark:text-gray-400   ">
